@@ -1,0 +1,216 @@
+.eficiencia{
+  background-color: #a7c3d3;
+  padding: 2rem 2rem 3rem;
+}
+
+.eficiencia .paratexto{
+text-align: center;
+font-weight: 700;
+color: #636e50;
+letter-spacing: 1px;
+}
+
+.eficiencia .titulo{
+  font-size: 2.35rem;
+  text-align: left;
+  margin-top: 0.5rem;
+  font-family: 'MontrealBold';
+  color: #2d3a2c;
+  /* justify-content: baseline; */
+}
+
+.eficiencia .texto{
+margin-top: 1rem;
+}
+
+/* ================= CARDS ================= */
+
+.eficiencia .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 2rem;
+}
+
+.eficiencia .cards .card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.eficiencia .cards .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+}
+
+.eficiencia .cards .card .porcentaje {
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.eficiencia .porcentaje-verde {
+  color: #636e50;
+}
+
+.eficiencia .porcentaje-azul {
+  color: #ff5a34;
+}
+
+.eficiencia .cards .card .subtitulo {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: black;
+}
+
+.eficiencia .cards .card .texto {
+  font-size: 16px;
+  line-height: 1.55;
+  color: black;
+  text-align: left;
+}
+
+.eficiencia .prueba{
+  font-size: 1.4rem;
+}
+
+/* ================= TARJETA GRANDE ================= */
+
+.eficiencia .tarjetaGrande{
+  background-color: white;
+  margin: 2rem;
+  border-radius: 18px;
+  padding: 2rem 1rem 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.eficiencia .titulo-mecanismo{
+  font-size: 2rem;
+  color: #636e50;
+  margin-bottom: 2rem;
+}
+
+.eficiencia .containerTarjetaGrande{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.eficiencia .tarjeta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eficiencia .tarjeta .subtitulo{
+  text-align: center;
+  color: #636e50;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.eficiencia .tarjeta .texto{
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+/* ===== CÍRCULOS (agregados también en mobile como pediste) ===== */
+
+.eficiencia .punto{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #2c3340;
+  opacity: 0.35;
+  margin-bottom: 1rem;
+}
+
+/* ================= >= 768px ================= */
+
+@media (min-width: 768px) {
+
+.eficiencia .cards {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.eficiencia .containerTarjetaGrande {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.eficiencia .tarjeta {
+  flex: 1;
+}
+}
+
+/* ================= >= 1024px (como tu captura) ================= */
+
+@media (min-width: 1024px){
+
+  .eficiencia{
+      padding: 2rem 6rem;
+  }
+
+  .eficiencia .titulo{
+      font-size: 3rem;
+  }
+
+  .eficiencia .cards{
+      max-width: 1100px;
+      margin: 3rem auto;
+      gap: 3rem;
+  }
+
+  .eficiencia .cards .card{
+      padding: 3rem;
+      border-radius: 22px;
+  }
+
+  .eficiencia .tarjetaGrande{
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 3rem 2rem 4rem;
+      border-radius: 22px;
+  }
+
+  .eficiencia .punto{
+      width: 70px;
+      height: 70px;
+      margin-bottom: 1.25rem;
+  }
+}
+
+/* ================= >= 1440px ================= */
+
+@media (min-width: 1440px){
+
+  .eficiencia{
+      padding: 2rem 10rem;
+  }
+
+  .eficiencia .titulo{
+      font-size: 3.8rem;
+  }
+
+  .eficiencia .texto{
+    font-size: 1.2rem;
+
+  }
+
+  .eficiencia .cards{
+      max-width: 1300px;
+      gap: 4rem;
+  }
+
+  .eficiencia .tarjetaGrande{
+      max-width: 1300px;
+  }
+
+  .eficiencia .cards .card{
+      padding: 3.5rem;
+  }
+}

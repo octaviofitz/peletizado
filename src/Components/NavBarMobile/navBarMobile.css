@@ -1,0 +1,46 @@
+.navMobile{
+    width:100%;
+    background:#e9eaec;
+    padding: 0px 18px;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+  }
+  
+  .navMobile .logoBox{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    cursor: pointer;
+  }
+/*   
+  .navMobile .logoIcon{
+    width:36px;
+    height:36px;
+    background:#636e50;
+    color:white;
+    font-weight:700;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+  } */
+  
+  .navMobile .logoText{
+    font-size:18px;
+    font-weight:700;
+    color:#636e50;
+    letter-spacing:0.5px;
+  }
+
+
+  .navMobile .logo{
+    width: 33vw;
+  }
+
+  @media (min-width: 1024px){
+    .navMobile{
+      display: none;
+    }
+  }

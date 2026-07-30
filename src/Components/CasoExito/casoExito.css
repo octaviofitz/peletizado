@@ -1,0 +1,117 @@
+.casoExito {
+    width: 100%;
+    padding: 3.5rem 1.5rem; /* mobile */
+    display: flex;
+    justify-content: center;
+    background-color: #d0d0d0d0;
+    margin-top: 2rem;
+  }
+  
+  .casoExito__wrap {
+    width: 100%;
+    max-width: 520px; /* mobile */
+    text-align: center;
+  }
+  
+  .casoExito__dot {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    background: #636e50; /* puntito verde suave */
+    margin-bottom: 1.5rem;
+  }
+  
+  .casoExito__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.05;
+    color: #0b1320;
+    font-family: 'MontrealBold';
+  }
+  
+  .casoExito__quote {
+    margin: 1.6rem auto 1.8rem;
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #24364a;
+    max-width: 46ch;
+  }
+  
+  .casoExito__author {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-top: 0.25rem;
+  }
+  
+  .casoExito__avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 999px;
+    overflow: hidden;
+    flex: 0 0 auto;
+    background: #eef2f6;
+  }
+  
+  .casoExito__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .casoExito__authorText {
+    text-align: left;
+  }
+  
+  .casoExito__name {
+    margin: 0;
+    font-weight: 800;
+    color: #0b1320;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  
+  .casoExito__role {
+    margin: 0.2rem 0 0;
+    font-size: 0.95rem;
+    color: #475467;
+    line-height: 1.25;
+  }
+  
+  .casoExito__link {
+    display: inline-block;
+    margin-top: 1.8rem;
+    font-weight: 700;
+    color: #1d4ed8;
+    text-decoration: none;
+  }
+  
+  .casoExito__link:hover {
+    text-decoration: underline;
+  }
+  
+  /* =========================
+     DESKTOP (como tu 2da imagen)
+     ========================= */
+  @media (min-width: 992px) {
+    .casoExito {
+      padding: 6.5rem 2rem; /* más aire */
+    }
+  
+    .casoExito__wrap {
+      max-width: 900px; /* más ancho centrado */
+    }
+  
+    .casoExito__title {
+      font-size: 2.4rem;
+    }
+  
+    .casoExito__quote {
+      max-width: 80ch; /* más ancho en desktop */
+      font-size: 1.15rem;
+    }
+  }

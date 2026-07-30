@@ -1,0 +1,216 @@
+.trazabilidad{
+    background-color: #d0d0d0;
+    padding: 3rem 1.1rem;
+  }
+  
+  .trazabilidad .paratexto{
+  text-align: center;
+  font-weight: 700;
+  color: #636e50;
+  letter-spacing: 1px;
+  }
+  
+  .trazabilidad .titulo{
+    font-size: 2.35rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-family: 'MontrealBold';
+    color: #ff5a34;
+  }
+  
+  .trazabilidad .texto{
+  text-align: center;
+  margin-top: 1rem;
+  }
+  
+  /* ================= CARDS ================= */
+  
+  .trazabilidad .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin: 2rem;
+  }
+  
+  .trazabilidad .cards .card {
+    background: white;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  .trazabilidad .cards .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .trazabilidad .cards .card .porcentaje {
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  
+  .trazabilidad .porcentaje-verde {
+    color: #636e50;
+  }
+  
+  .trazabilidad .porcentaje-azul {
+    color: #ff5a34;
+  }
+  
+  .trazabilidad .cards .card .subtitulo {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: black;
+  }
+  
+  .trazabilidad .cards .card .texto {
+    font-size: 16px;
+    line-height: 1.55;
+    color: black;
+    text-align: left;
+  }
+  
+  .trazabilidad .prueba{
+    font-size: 1.4rem;
+  }
+  
+  /* ================= TARJETA GRANDE ================= */
+  
+  .trazabilidad .tarjetaGrande{
+    background-color: white;
+    margin: 2rem;
+    border-radius: 18px;
+    padding: 2rem 1rem 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .trazabilidad .titulo-mecanismo{
+    font-size: 2rem;
+    color: #636e50;
+    margin-bottom: 2rem;
+  }
+  
+  .trazabilidad .containerTarjetaGrande{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .trazabilidad .tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .trazabilidad .tarjeta .subtitulo{
+    text-align: center;
+    color: #636e50;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .trazabilidad .tarjeta .texto{
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+  
+  /* ===== CÍRCULOS (agregados también en mobile como pediste) ===== */
+  
+  .trazabilidad .punto{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #2c3340;
+    opacity: 0.35;
+    margin-bottom: 1rem;
+  }
+  
+  /* ================= >= 768px ================= */
+  
+  @media (min-width: 768px) {
+  
+  .trazabilidad .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .trazabilidad .containerTarjetaGrande {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .trazabilidad .tarjeta {
+    flex: 1;
+  }
+  }
+  
+  /* ================= >= 1024px (como tu captura) ================= */
+  
+  @media (min-width: 1024px){
+  
+    .trazabilidad{
+        padding: 2rem 6rem;
+    }
+  
+    .trazabilidad .titulo{
+        font-size: 3rem;
+    }
+  
+    .trazabilidad .cards{
+        max-width: 1100px;
+        margin: 3rem auto;
+        gap: 3rem;
+    }
+  
+    .trazabilidad .cards .card{
+        padding: 3rem;
+        border-radius: 22px;
+    }
+  
+    .trazabilidad .tarjetaGrande{
+        max-width: 1100px;
+        margin: 3rem auto;
+        padding: 3rem 2rem 4rem;
+        border-radius: 22px;
+    }
+  
+    .trazabilidad .punto{
+        width: 70px;
+        height: 70px;
+        margin-bottom: 1.25rem;
+    }
+  }
+  
+  /* ================= >= 1440px ================= */
+  
+  @media (min-width: 1440px){
+  
+    .trazabilidad{
+        padding: 2rem 10rem;
+    }
+  
+    .trazabilidad .titulo{
+        font-size: 3.8rem;
+    }
+  
+    .trazabilidad .texto{
+      font-size: 1.2rem;
+  
+    }
+  
+    .trazabilidad .cards{
+        max-width: 1300px;
+        gap: 4rem;
+    }
+  
+    .trazabilidad .tarjetaGrande{
+        max-width: 1300px;
+    }
+  
+    .trazabilidad .cards .card{
+        padding: 3.5rem;
+    }
+  }

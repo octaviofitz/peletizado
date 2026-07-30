@@ -1,0 +1,207 @@
+/* =========================
+   ESTRUCTURA GENERAL
+========================= */
+
+.header{
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #5f7086 0%, #4f5f75 60%, #46566d 100%);
+    padding: 4vh 0 18vh; /* MÁS espacio abajo para que el corte no toque botones */
+  }
+
+  .header{
+    position: relative;
+    overflow: hidden;
+  
+    background: linear-gradient(
+      180deg,
+      #a7c3d3 0%,
+      #a7c3d3 35%,
+      #eeeeee 70%,
+      #ffffff 100%
+    );
+  
+    padding: 4vh 0 18vh;
+  }
+  
+  /* Contenedor central real */
+  .header-contenido{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 6vw;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* SIEMPRE arriba del corte */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* =========================
+     CORTE DIAGONAL (NO TOCA BOTONES)
+  ========================= */
+  
+  .header::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 180px; /* altura controlada */
+    background: #ffffff;
+    z-index: 1; /* detrás del contenido */
+    clip-path: polygon(0 75%, 100% 35%, 100% 100%, 0 100%);
+  }
+  
+  /* =========================
+     BADGE SUPERIOR
+  ========================= */
+  
+  .header .paratexto{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+  
+    background: rgba(15, 35, 60, 0.35);
+    border-radius: 999px;
+    border: 2px solid #2d3a2c;
+  
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+  
+    text-align: center;   /* CENTRADO REAL */
+  }
+  
+  /* =========================
+     TITULO
+  ========================= */
+  
+  .header .titulo{
+    margin-top: 20px;
+    color: white;
+    font-weight: 800;
+    line-height: 1.08;
+    text-shadow: 0 3px 0 rgba(0,0,0,0.18);
+  
+    font-size: clamp(2.3rem, 10vw, 3.3rem);
+    font-family: 'MontrealBold';
+  }
+  
+  /* =========================
+     SUBTITULO
+  ========================= */
+  
+  .header .subtitulo{
+    margin-top: 18px;
+    color: rgba(255,255,255,0.92);
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 750px;
+  
+    font-size: clamp(1.05rem, 4.8vw, 1.3rem);
+  }
+  
+  /* =========================
+     BOTONES
+  ========================= */
+  
+  .header .contenedorBotones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 28px;
+  }
+  
+  .header .boton{
+    width: min(85vw, 380px);
+    padding: 14px 22px;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 12px 26px rgba(0,0,0,0.25);
+    transition: all 0.25s ease;
+  }
+  
+  .header .boton:hover{
+    transform: translateY(-2px);
+  }
+  
+  /* Botón verde */
+  .header .boton-primario{
+    background: #2d3a2c;
+    color: white;
+  }
+  
+  /* Botón gris azulado */
+  .header .boton-secundario{
+    background: #2d3a2c;
+    color: white;
+  }
+  
+  /* =========================
+     >= 768px
+  ========================= */
+  
+  @media (min-width: 768px){
+  
+    .header{
+      padding: 6vh 0 20vh;
+    }
+  
+    .header::after{
+      height: 220px;
+      clip-path: polygon(0 78%, 100% 40%, 100% 100%, 0 100%);
+    }
+  
+    .header .titulo{
+      font-size: clamp(3rem, 6vw, 4.2rem);
+    }
+  
+    .header .subtitulo{
+      font-size: 1.25rem;
+    }
+  
+    .header .contenedorBotones{
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .header .boton{
+      width: 280px;
+    }
+  }
+  
+  /* =========================
+     >= 1024px
+  ========================= */
+  
+  @media (min-width: 1024px){
+  
+    .header{
+      padding: 7vh 0 22vh;
+    }
+  
+    .header::after{
+      height: 260px;
+      clip-path: polygon(0 82%, 100% 45%, 100% 100%, 0 100%);
+    }
+  
+    .header .titulo{
+      font-size: clamp(3.5rem, 4.8vw, 5rem);
+    }
+  
+    .header .subtitulo{
+      font-size: 1.3rem;
+    }
+  
+    .header .boton{
+      width: 300px;
+      font-size: 1.1rem;
+    }
+  }
+
+  

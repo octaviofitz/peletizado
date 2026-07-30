@@ -1,0 +1,70 @@
+.contacto{
+    padding: 60px 20px 60px;
+    display:flex;
+    justify-content:center;
+  }
+  
+  .formCard{
+    width:100%;
+    max-width:720px;
+    background:white;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+  }
+  
+  /* HEADER */
+  .formHeader{
+    background:#ff5a34;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+  }
+  
+  .formHeader h2{
+    margin:0;
+    font-size:32px;
+    font-weight:700;
+    font-family: 'MontrealBold';
+  }
+  
+  .formHeader p{
+    margin-top:8px;
+    font-size:16px;
+    opacity:0.9;
+  }
+  
+  /* BODY */
+  .formBody{
+    padding:35px;
+    display:grid;
+    gap:22px;
+  }
+  
+  /* Desktop grid */
+  @media(min-width:900px){
+    .formBody{
+      grid-template-columns:1fr 1fr;
+    }
+  
+    .formBody > :nth-child(3),
+    .formBody > :nth-child(4),
+    .formBody > :nth-child(5),
+    .submitBtn{
+      grid-column:1 / -1;
+    }
+  }
+  
+  /* Button */
+  .submitBtn{
+    background:#ff5a34 !important;
+    padding:14px !important;
+    font-size:16px !important;
+    border-radius:8px !important;
+  }
+
+  @media(min-width:1024px){
+    .contacto{
+      padding-bottom: 6rem;
+    }
+  }
