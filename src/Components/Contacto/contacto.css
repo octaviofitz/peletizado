@@ -15,7 +15,7 @@
   
   /* HEADER */
   .formHeader{
-    background:#ff5a34;
+    background:#2d3a2c;
     color:white;
     text-align:center;
     padding:35px 20px;
@@ -57,7 +57,7 @@
   
   /* Button */
   .submitBtn{
-    background:#ff5a34 !important;
+    background:#2d3a2c !important;
     padding:14px !important;
     font-size:16px !important;
     border-radius:8px !important;

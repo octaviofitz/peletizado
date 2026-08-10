@@ -1,25 +1,16 @@
 .trazabilidad{
-    background-color: #d0d0d0;
+    background-color: #a7c3d3;
     padding: 3rem 1.1rem;
-  }
-  
-  .trazabilidad .paratexto{
-  text-align: center;
-  font-weight: 700;
-  color: #636e50;
-  letter-spacing: 1px;
   }
   
   .trazabilidad .titulo{
     font-size: 2.35rem;
-    text-align: center;
     margin-top: 0.5rem;
     font-family: 'MontrealBold';
-    color: #ff5a34;
+    color: #2d3a2c;
   }
   
   .trazabilidad .texto{
-  text-align: center;
   margin-top: 1rem;
   }
   

@@ -4,7 +4,7 @@ import React from 'react';
 import Header from '../Header/Header';
 import Nosotros from '../Nosotros/Nosotros';
 import Eficiencia from '../Eficiencia/Eficiencia';
-import Calidad from '../Calidad/Calidad';
+import Calidad from '../Identificacion/Identificacion';
 import CasoExito from '../CasoExito/CasoExito';
 import Contacto from '../Contacto/Contacto';
 import Trazabilidad from '../Trazabilidad/Trazabilidad';
@@ -22,7 +22,7 @@ function Home() {
             <Eficiencia />
             <Calidad />
             <Trazabilidad />
-            <CasoExito />
+            {/* <CasoExito /> */}
             <Contacto />
         </div>
     );
