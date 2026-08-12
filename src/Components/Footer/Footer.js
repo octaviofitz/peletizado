@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 
+import isologo from '../../IMG/isologo.webp'
 
 import './footer.css';
 
@@ -8,7 +9,9 @@ function Footer() {
     return (
         <footer className='footer'>
 
-            <a className='logo'>VULGEL CR 40</a>
+            <div className='logo'>
+                <img className='isologo' src={isologo} alt='aglupel'></img>
+            </div>
 
                 <div className='containerTexto'>
                 <Nav.Link className="link" href="/#adsorbente">Adsorbente</Nav.Link>
@@ -18,7 +21,7 @@ function Footer() {
             </div>
 
             <div className='galide'>
-            <p className='texto'>Desarrollado por <a href='https://www.galide.com.ar' target='__blank' className='bold'>Galidé</a></p>
+            <p className='texto'>Desarrollado por   <a href='https://www.galide.com.ar' target='__blank' className='bold'>Galidé</a></p>
             </div>
            
         </footer>

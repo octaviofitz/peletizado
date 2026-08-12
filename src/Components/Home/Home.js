@@ -2,9 +2,9 @@ import React from 'react';
 
 
 import Header from '../Header/Header';
-import Nosotros from '../Nosotros/Nosotros';
-import Eficiencia from '../Eficiencia/Eficiencia';
-import Calidad from '../Identificacion/Identificacion';
+import Solucion from '../Solucion/Solucion';
+import Ventajas from '../Ventajas/Ventajas';
+import Identificacion from '../Identificacion/Identificacion';
 import CasoExito from '../CasoExito/CasoExito';
 import Contacto from '../Contacto/Contacto';
 import Trazabilidad from '../Trazabilidad/Trazabilidad';
@@ -12,15 +12,15 @@ import Trazabilidad from '../Trazabilidad/Trazabilidad';
 
 
 function Home() {
-    console.log({ Header, Nosotros, Eficiencia, Calidad, CasoExito, Contacto });
+    console.log({ Header, Solucion, Ventajas, Identificacion, CasoExito, Contacto });
 
     return (
         
         <div>
             <Header />
-            <Nosotros />
-            <Eficiencia />
-            <Calidad />
+            <Solucion />
+            <Ventajas />
+            <Identificacion />
             <Trazabilidad />
             {/* <CasoExito /> */}
             <Contacto />

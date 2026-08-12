@@ -1,6 +1,6 @@
 .trazabilidad{
     background-color: #a7c3d3;
-    padding: 3rem 1.1rem;
+    padding: 2rem 2rem 3rem;
   }
   
   .trazabilidad .titulo{
@@ -119,10 +119,18 @@
     opacity: 0.35;
     margin-bottom: 1rem;
   }
+
+  .trazabilidad .listado{
+    padding-left: 1rem;
+  }
   
   /* ================= >= 768px ================= */
   
   @media (min-width: 768px) {
+
+    .trazabilidad{
+        padding: 6vh 8vw;      
+    }
   
   .trazabilidad .cards {
     grid-template-columns: repeat(2, 1fr);
@@ -143,11 +151,12 @@
   @media (min-width: 1024px){
   
     .trazabilidad{
-        padding: 2rem 6rem;
+        padding: 3.5rem 10vw;
     }
   
     .trazabilidad .titulo{
         font-size: 3rem;
+        margin-bottom: 3rem;
     }
   
     .trazabilidad .cards{
@@ -180,7 +189,7 @@
   @media (min-width: 1440px){
   
     .trazabilidad{
-        padding: 2rem 10rem;
+      padding: 9vh 180px;
     }
   
     .trazabilidad .titulo{
@@ -188,7 +197,7 @@
     }
   
     .trazabilidad .texto{
-      font-size: 1.2rem;
+      font-size: 1.3rem;
   
     }
   

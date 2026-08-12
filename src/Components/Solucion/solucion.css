@@ -1,24 +1,24 @@
-.nosotros{
+.solucion{
   padding: 2rem 2rem 3rem;
 }
 
-.nosotros .titulo{
+.solucion .titulo{
   font-size: 2rem;
   color: #a7c3d3;
   font-family: 'MontrealBold';
 }
 
-.nosotros .texto{
+.solucion .texto{
   font-size: 1.15rem;
   margin: 1.5rem 0;
 }
 
-.nosotros .listado {
+.solucion .listado {
   list-style: none;
   padding-left: 0;
 }
 
-.nosotros .items {
+.solucion .items {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -26,7 +26,7 @@
   font-size: 1.05rem;
 }
 
-.nosotros .items::before {
+.solucion .items::before {
   content: "";
   width: 18px;
   height: 18px;
@@ -36,7 +36,7 @@
 }
 
 /* ✅ NUEVO: contenedor que define el “rectángulo” y recorta */
-.nosotros__media{
+.solucion__media{
   width: 80vw;
   margin-top: 1.5rem;
   border-radius: 10px;
@@ -44,7 +44,7 @@
 }
 
 /* ✅ la imagen llena el contenedor y se recorta (como Unsplash) */
-.nosotros .img{
+.solucion .img{
   width: 100%;
   height: 280px;             /* ✅ controla el alto en mobile/tablet */
   object-fit: cover;         /* ✅ clave */
@@ -52,19 +52,27 @@
   display: block;
 }
 
+
+@media (min-width: 768px) {
+
+  .solucion{
+    padding: 6vh 8vw;
+  }
+
+}
 /* >= 1024px */
 @media (min-width: 1024px) {
-  .nosotros {
+  .solucion {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 3rem;
+    padding: 4rem 6rem;
     display: grid;
     grid-template-columns: 1.05fr 0.95fr;
     align-items: center;
     column-gap: 4rem;
   }
 
-  .nosotros__media{
+  .solucion__media{
     position: relative;
     justify-self: end;
     width: 100%;
@@ -74,7 +82,7 @@
     overflow: hidden;        /* ✅ recorte */
   }
 
-  .nosotros .img{
+  .solucion .img{
     width: 100%;
     height: 360px;           /* ✅ alto estable en desktop */
     object-fit: cover;       /* ✅ clave */
@@ -84,7 +92,7 @@
   }
 
   /* fondo/sombra detrás de la imagen */
-  .nosotros__media::after {
+  .solucion__media::after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -99,35 +107,31 @@
 
 /* >= 1440px */
 @media (min-width: 1440px) {
-  .nosotros {
-    max-width: 1320px;
-    padding: 5rem 4rem;
+  .solucion {
+    max-width: 1720px;
+    padding: 5rem 8rem;
     column-gap: 6rem;
   }
 
-  .nosotros .titulo {
-    font-size: 2.4rem;
+  .solucion .titulo {
+    font-size: 2.25rem;
   }
 
-  .nosotros .texto {
-    font-size: 1.2rem;
-    max-width: 52ch;
+  .solucion .texto {
+    font-size: 1.35rem;
+    /* max-width: 52ch; */
   }
 
-  .nosotros .items {
-    font-size: 1.1rem;
-  }
-
-  .nosotros__media{
+  .solucion__media{
     max-width: 640px;
     border-radius: 22px;
   }
 
-  .nosotros .img{
+  .solucion .img{
     height: 420px;           /* ✅ más alto en pantallas grandes */
   }
 
-  .nosotros__media::after {
+  .solucion__media::after {
     top: 22px;
     left: 22px;
     right: -22px;

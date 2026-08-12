@@ -12,9 +12,8 @@ function Header() {
         <h1 className='titulo'>
           AGLUPEL ECO
           <br />
-          <br />
-          PELETIZADO NATURAL Y 
-          AGLUTINACIÓN DE ALTA COHESIÓN
+          <div className='segundoTitulo'>PELETIZADO NATURAL Y 
+          AGLUTINACIÓN DE ALTA COHESIÓN</div>
         </h1>
 
        {/*  <h2 className='subtitulo'>

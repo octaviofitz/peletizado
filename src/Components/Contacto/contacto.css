@@ -40,6 +40,12 @@
     display:grid;
     gap:22px;
   }
+
+  @media(min-width:768px){
+    .formCard{
+      width: 82vw;
+    }
+  }
   
   /* Desktop grid */
   @media(min-width:900px){
@@ -67,4 +73,17 @@
     .contacto{
       padding-bottom: 6rem;
     }
+  }
+
+  @media(min-width:1024px){
+    .contacto{
+      padding: 9vh 180px;
+    }
+
+    .formCard{
+      max-width:1000px;
+      width: 100vw;
+    }
+
+    
   }

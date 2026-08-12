@@ -1,12 +1,12 @@
 import React from 'react';
-import './nosotros.css';
+import './solucion.css';
 
 // ✅ recomendación: import local para que no dependa de URL
 import imgNueva from '../../IMG/nosotros.webp';
 
-function Nosotros() {
+function Solucion() {
   return (
-    <section className='nosotros' id='nosotros'>
+    <section className='solucion' id='solucion'>
       <div>
         <h3 className='titulo'>La Solución para la Máxima Cohesión</h3>
         <p className='texto'>
@@ -16,19 +16,15 @@ function Nosotros() {
         Está diseñado para procesos de peletizado que buscan minimizar las pérdidas por desgaste, prevenir el desgranamiento y optimizar la dureza final del producto durante su manipulación, transporte y uso.
         </p>
         <p className='texto'><strong>Asegure la resistencia a la compresión y la durabilidad de sus pellets.</strong></p>
-        {/* <ul className='listado'>
-          <li className='items'>Previene daños en la salud animal.</li>
-          <li className='items'>Baja inclusión (0.2-0.3%) manteniendo eficacia.</li>
-          <li className='items'>Apto para Bovinos, Aves, Cerdos y Peces.</li>
-        </ul> */}
+       
       </div>
 
       {/* ✅ wrapper para recortar sin romper layout */}
-      <div className="nosotros__media">
+      <div className="solucion__media">
         <img className='img' src={imgNueva} alt="VULGEL CR 40" />
       </div>
     </section>
   );
 }
 
-export default Nosotros;
+export default Solucion;

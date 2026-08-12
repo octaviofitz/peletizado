@@ -1,9 +1,9 @@
 import React from 'react';
-import './eficiencia.css';
+import './ventajas.css';
 
-function Eficiencia() {
+function Ventajas() {
   return (
-    <section className='eficiencia' id='evidencia'>
+    <section className='ventajas' id='evidencia'>
       
       {/* <p className='paratexto'>CIENCIA APLICADA</p> */}
       <h4 className='titulo'>Ventajas Competitivas y Mecanismo de Acción</h4>
@@ -23,4 +23,4 @@ function Eficiencia() {
   );
 }
 
-export default Eficiencia;
+export default Ventajas;

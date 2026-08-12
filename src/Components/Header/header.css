@@ -92,6 +92,11 @@
      SUBTITULO
   ========================= */
   
+  .header .segundoTitulo{
+    margin-top: 1.75rem;
+    font-size: 2.5rem;
+  }
+
   .header .subtitulo{
     margin-top: 18px;
     color: rgba(255,255,255,0.92);
@@ -182,7 +187,7 @@
   @media (min-width: 1024px){
   
     .header{
-      padding: 7vh 0 22vh;
+      padding: 10vh 0 26vh;
     }
   
     .header::after{

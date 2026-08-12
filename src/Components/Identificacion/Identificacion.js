@@ -10,42 +10,60 @@ function Identificacion() {
   ];
 
   return (
-    <section className="identificacion" id="identificacion">
-      <h5 className="titulo">Identificación y Especificaciones Físico-Químicas</h5>
-      <p className="texto" id="subtitulo">
-      Identificación del Producto:
-      </p>
-      
-      <ul className="listado">
-        <li><strong>PRODUCTO: </strong>AGLUPEL ECO</li>
-        <li><strong>Forma Física: </strong>Polvo grueso</li>
-        <li><strong>Color: </strong>Beige / Marrón claro</li>
-        <li><strong>Dosis Recomendada: </strong>30 kg / Tonelada</li>
-        <li><strong>Presentación: </strong>Disponible en Big Bags de 1.250 kg y en bolsas de 25 kg para optimizar la logística</li>
-      </ul>
+    <section className="identificacion">
+      <div className="identificacion__contenido">
 
-      <div className="ContenedorTarjetas">
-    
-        <div className="cardTabla">
-          <h4 className="titulo">Especificación Físico-Química</h4>
-       
+        <div className="identificacion__info">
+          <h2 className="titulo">
+            Identificación y Especificaciones Físico-Químicas
+          </h2>
 
-          <table className="tabla">
-            <thead>
-              <tr>
-                <th>Parámetro</th>
-                <th>Rango Especificado</th>
-              </tr>
-            </thead>
-            <tbody>
-              {sustancias.map((item, i) => (
-                <tr key={i}>
-                  <td>{item.nombre}</td>
-                  <td className="valor">{item.limite}</td>
+          {/* <h3 id="subtitulo">Identificación del Producto:</h3> */}
+
+          <ul className="listado">
+            <li>
+              <strong>PRODUCTO: </strong>AGLUPEL ECO
+            </li>
+            <li>
+              <strong>Forma Física: </strong>Polvo grueso
+            </li>
+            <li>
+              <strong>Color: </strong>Beige / Marrón claro
+            </li>
+            <li>
+              <strong>Dosis Recomendada: </strong>30 kg / Tonelada
+            </li>
+            <li>
+              <strong>Presentación: </strong>Disponible en Big Bags de 1.250 kg
+              y en bolsas de 25 kg para optimizar la logística
+            </li>
+          </ul>
+        </div>
+
+        <div className="ContenedorTarjetas">
+          <div className="cardTabla">
+            <h4 className="titulo">
+              Especificación Físico-Química
+            </h4>
+
+            <table className="tabla">
+              <thead>
+                <tr>
+                  <th>Parámetro</th>
+                  <th>Rango Especificado</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+
+              <tbody>
+                {sustancias.map((item, i) => (
+                  <tr key={i}>
+                    <td>{item.nombre}</td>
+                    <td className="valor">{item.limite}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
       </div>
