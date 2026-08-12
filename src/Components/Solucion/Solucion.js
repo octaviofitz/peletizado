@@ -6,7 +6,7 @@ import imgNueva from '../../IMG/nosotros.webp';
 
 function Solucion() {
   return (
-    <section className='solucion' id='solucion'>
+    <section className='solucion' id='nosotros'>
       <div>
         <h3 className='titulo'>La Solución para la Máxima Cohesión</h3>
         <p className='texto'>

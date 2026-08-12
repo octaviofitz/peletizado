@@ -10,7 +10,7 @@ function Identificacion() {
   ];
 
   return (
-    <section className="identificacion">
+    <section className="identificacion" id="identificacion">
       <div className="identificacion__contenido">
 
         <div className="identificacion__info">

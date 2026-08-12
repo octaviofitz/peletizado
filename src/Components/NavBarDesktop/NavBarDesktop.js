@@ -19,12 +19,12 @@ function NavBarDesktop() {
             Nosotros
           </a>
 
-          <a href="#evidencia" className="navDesktop__link">
-            Evidencia
+          <a href="#ventajas" className="navDesktop__link">
+            Ventajas
           </a>
 
-          <a href="#calidad" className="navDesktop__link">
-            Calidad
+          <a href="#identificacion" className="navDesktop__link">
+            Identificación
           </a>
 
           <a href="#contacto" className="navDesktop__link">

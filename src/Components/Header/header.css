@@ -146,6 +146,12 @@
     background: #2d3a2c;
     color: white;
   }
+
+  .header a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+  }
   
   /* =========================
      >= 768px

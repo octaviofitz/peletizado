@@ -28,12 +28,12 @@
   text-decoration: none;
   color: white;
   cursor: pointer;
-  font-size: 1.08rem;
+  font-size: 1.06rem;
 }
 
 .footer .containerTexto .link{
   margin: 0.5rem 0;
-  padding: 0rem 0.65rem 0.5rem; /* ✅ COMO ESTABA */
+  padding: 0rem 0.5rem 0.5rem; /* ✅ COMO ESTABA */
   color: black;
 }
 

@@ -3,7 +3,7 @@ import './ventajas.css';
 
 function Ventajas() {
   return (
-    <section className='ventajas' id='evidencia'>
+    <section className='ventajas' id='ventajas'>
       
       {/* <p className='paratexto'>CIENCIA APLICADA</p> */}
       <h4 className='titulo'>Ventajas Competitivas y Mecanismo de Acción</h4>

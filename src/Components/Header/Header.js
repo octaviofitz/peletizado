@@ -27,7 +27,9 @@ function Header() {
           </button>
 
           <button className='boton boton-secundario'>
-            Ver Evidencia
+            <a href="#contacto">
+            Contactar
+            </a>
           </button>
         </div>
       </div>
