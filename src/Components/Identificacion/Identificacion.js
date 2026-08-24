@@ -35,7 +35,6 @@ function Identificacion() {
             </li>
             <li>
               <strong>Presentación: </strong>Disponible en Big Bags de 1.250 kg
-              y en bolsas de 25 kg para optimizar la logística
             </li>
           </ul>
         </div>

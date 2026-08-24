@@ -47,22 +47,25 @@ function Contacto() {
 
     emailjs
       .sendForm(
-        'service_avyk5ff',
-        'template_ayu86b6',
+        'service_p85pt6k',
+        'template_3gu8v6q',
         e.target,
-        'kGJMjsQGEXz5lmSJ2'
+        'PD16INBToqr4roqiu'
       )
       .then(() => {
-        Swal.fire('¡Mensaje enviado!', '', 'success');
+        Swal.fire({
+          title: '¡Mensaje enviado!',
+          icon: 'success',
+          confirmButtonColor: '#2d3a2c'
+        });
+      
         e.target.reset();
         setName('');
         setEmpresa('');
         setMail('');
         setMensaje('');
+        setInteres('Solicitar Cotización (Big Bags)');
       })
-      .catch(() => {
-        Swal.fire('Error al enviar', '', 'error');
-      });
   };
 
   return (
@@ -119,9 +122,9 @@ function Contacto() {
               <MenuItem value="Solicitar Cotización (Big Bags)">
                 Solicitar Cotización (Big Bags)
               </MenuItem>
-              <MenuItem value="Solicitar Cotización (Bolsas 25kg)">
+              {/* <MenuItem value="Solicitar Cotización (Bolsas 25kg)">
                 Solicitar Cotización (Bolsas 25kg)
-              </MenuItem>
+              </MenuItem> */}
               <MenuItem value="Información Técnica">Información Técnica</MenuItem>
               <MenuItem value="Distribución">Distribución</MenuItem>
             </TextField>

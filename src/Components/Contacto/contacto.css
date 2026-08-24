@@ -41,6 +41,12 @@
     gap:22px;
   }
 
+
+  .swal2-confirm .swal2-styled,
+  .swal2-action-button-focus-box-shadow{
+    background-color: #2d3a2c !important;
+  }
+
   @media(min-width:768px){
     .formCard{
       width: 82vw;

@@ -12,8 +12,7 @@ function Header() {
         <h1 className='titulo'>
           AGLUPEL ECO
           <br />
-          <div className='segundoTitulo'>PELETIZADO NATURAL Y 
-          AGLUTINACIÓN DE ALTA COHESIÓN</div>
+          <div className='segundoTitulo'>AGLUTINANTE PARA PELLET NATURAL Y DE ALTA COHESIÓN</div>
         </h1>
 
        {/*  <h2 className='subtitulo'>
@@ -22,15 +21,16 @@ function Header() {
         </h2> */}
 
         <div className='contenedorBotones'>
-          <button className='boton boton-primario'>
+         {/*  <button className='boton boton-primario'>
             Solicitar Ficha Técnica
-          </button>
+          </button> */}
 
-          <button className='boton boton-secundario'>
-            <a href="#contacto">
-            Contactar
-            </a>
+<a href="#contacto"><button className='boton boton-secundario'>
+            
+            CONTACTAR
+            
           </button>
+          </a>
         </div>
       </div>
     </section>
