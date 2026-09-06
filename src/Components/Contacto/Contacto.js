@@ -77,7 +77,7 @@ function Contacto() {
           {/* HEADER */}
           <div className="formHeader">
             <h2>Contáctenos</h2>
-            <p>Solicite cotización o fichas técnicas detalladas.</p>
+            <p>Solicite cotización o fichas técnicas detalladas</p>
           </div>
 
           {/* BODY */}
