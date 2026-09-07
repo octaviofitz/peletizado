@@ -81,9 +81,7 @@
     margin-top: 20px;
     color: white;
     font-weight: 800;
-    line-height: 1.08;
-    text-shadow: 0 3px 0 rgba(0,0,0,0.18);
-  
+    line-height: 1.08;  
     font-size: clamp(2.3rem, 10vw, 3.3rem);
     font-family: 'MontrealBold';
   }
@@ -137,13 +135,13 @@
   
   /* Botón verde */
   .header .boton-primario{
-    background: #2d3a2c;
+    background: #213828;
     color: white;
   }
   
   /* Botón gris azulado */
   .header .boton-secundario{
-    background: #2d3a2c;
+    background: #213828;
     color: white;
   }
 

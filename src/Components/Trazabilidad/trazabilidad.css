@@ -1,5 +1,5 @@
 .trazabilidad{
-    background-color: #a7c3d3;
+    background-color: #213828;
     padding: 2rem 2rem 3rem;
   }
   
@@ -7,11 +7,12 @@
     font-size: 2.35rem;
     margin-top: 0.5rem;
     font-family: 'MontrealBold';
-    color: #2d3a2c;
+    color: white;
   }
   
   .trazabilidad .texto{
   margin-top: 1rem;
+  color: white;
   }
   
   /* ================= CARDS ================= */

@@ -38,11 +38,12 @@
 
 
   .navDesktop__link {
-    color: black;
+    color: #213828;
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
   }
+ 
 
 }
 
@@ -63,7 +64,6 @@
   }
 
   .navDesktop__link {
-    color: black;
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
