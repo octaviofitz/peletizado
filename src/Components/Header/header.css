@@ -134,6 +134,8 @@
 .header-datos li{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 0.25rem;
   padding: 2rem 6vw;
   border-right: 2px solid var(--verde);

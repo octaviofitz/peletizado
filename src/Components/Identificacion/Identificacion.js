@@ -21,11 +21,15 @@ function Identificacion() {
     <section className="identificacion" id="identificacion">
       <div className="identificacion__contenido">
 
-        <div className="identificacion__info">
+        <div className="identificacion__encabezado">
           <p className="paratexto">Ficha técnica</p>
           <h2 className="titulo">
             Identificación y Especificaciones Físico-Químicas
           </h2>
+        </div>
+
+        <div className="identificacion__info">
+          <h4 className="tituloCuadro">Identificación del Producto</h4>
 
           <dl className="listado">
             {producto.map((item) => (
@@ -38,7 +42,7 @@ function Identificacion() {
         </div>
 
         <div className="cardTabla">
-          <h4 className="tituloTabla">
+          <h4 className="tituloCuadro tituloTabla">
             Especificación Físico-Química
           </h4>
 
