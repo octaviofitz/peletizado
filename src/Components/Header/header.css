@@ -1,5 +1,5 @@
 /* =========================
-   ESTRUCTURA GENERAL
+   ESTRUCTURA GENERAL (mobile: composición centrada)
 ========================= */
 
 .header{
@@ -12,15 +12,38 @@
 .header-contenido{
   max-width: 1400px;
   margin: 0 auto;
-  padding: 3.5rem 6vw 3rem;
+  padding: 2.75rem 6vw 3.25rem;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  align-items: center;
+  text-align: center;
+  gap: 1.75rem;
+}
+
+/* =========================
+   ISOTIPO (arriba en mobile, a la derecha en desktop)
+========================= */
+
+.header-grafico{
+  order: -1;
+  display: flex;
+  justify-content: center;
+}
+
+.header .isotipo{
+  width: 76px;
+  color: var(--lima);
 }
 
 /* =========================
    TEXTO
 ========================= */
+
+.header-texto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .header .paratexto{
   display: inline-block;
@@ -28,20 +51,20 @@
   color: var(--verde);
   font-family: 'MontrealBold';
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
   padding: 6px 12px;
   border-radius: 6px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .header .titulo{
   color: var(--lima);
   font-family: 'MontrealBold';
   text-transform: uppercase;
-  line-height: 0.9;
+  line-height: 0.92;
   letter-spacing: -0.01em;
-  font-size: clamp(3.4rem, 17vw, 5rem);
+  font-size: clamp(3rem, 15vw, 4.5rem);
 }
 
 .header .titulo-eco{
@@ -50,37 +73,35 @@
 }
 
 .header .segundoTitulo{
-  margin-top: 1.5rem;
-  max-width: 34ch;
-  font-size: clamp(1.15rem, 4.8vw, 1.5rem);
-  line-height: 1.3;
+  margin-top: 1.25rem;
+  max-width: 28ch;
+  font-size: 1.1rem;
+  line-height: 1.35;
   color: var(--gris);
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
 }
 
 /* =========================
-   BOTONES
+   BOTÓN
 ========================= */
 
 .header .contenedorBotones{
   display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 2.25rem;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 .header .boton{
-  display: inline-block;
-  padding: 15px 30px;
+  display: block;
+  width: 100%;
+  padding: 16px 30px;
   font-family: 'MontrealBold';
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 1rem;
+  letter-spacing: 0.03em;
+  font-size: 1.05rem;
+  line-height: 1;
+  text-align: center;
   text-decoration: none;
-  border: 2px solid var(--lima);
   border-radius: var(--radio-sm);
-  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .header .boton:hover{
@@ -94,65 +115,37 @@
 
 .header .boton-primario:hover{
   background: var(--gris);
-  border-color: var(--gris);
-}
-
-.header .boton-secundario{
-  display: none;
-  background: transparent;
-  color: var(--lima);
-}
-
-.header .boton-secundario:hover{
-  background: var(--lima);
-  color: var(--verde);
 }
 
 /* =========================
-   ISOTIPO
+   DATOS DESTACADOS (solo desktop)
 ========================= */
 
-.header-grafico{
-  display: flex;
-  justify-content: center;
-}
-
-.header .isotipo{
-  width: min(40vw, 150px);
-  color: var(--lima);
-}
-
-/* =========================
-   DATOS DESTACADOS
-========================= */
-
-/* la franja de datos solo se muestra desde tablet */
 .header-datos{
+  display: none;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: none;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
   background: var(--celeste);
   color: var(--verde);
 }
 
 .header-datos li{
-  padding: 1.25rem 6vw;
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  border-bottom: 2px solid var(--verde);
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 2rem 6vw;
+  border-right: 2px solid var(--verde);
 }
 
 .header-datos li:last-child{
-  border-bottom: none;
+  border-right: none;
 }
 
 .header-datos .dato{
   font-family: 'MontrealBold';
-  font-size: 1.6rem;
+  font-size: 2.2rem;
 }
 
 .header-datos .etiqueta{
@@ -166,39 +159,30 @@
 ========================= */
 
 @media (min-width: 768px){
-
   .header-contenido{
-    padding: 5rem 8vw 4rem;
+    padding: 4rem 8vw 4.5rem;
   }
 
   .header .isotipo{
-    width: 220px;
+    width: 96px;
   }
 
-  .header .boton-secundario{
+  .header .segundoTitulo{
+    font-size: 1.35rem;
+  }
+
+  .header .boton{
+    width: auto;
     display: inline-block;
   }
 
-  .header-datos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .header-datos li{
-    flex-direction: column;
-    gap: 0.25rem;
-    padding: 1.75rem 8vw;
-    border-bottom: none;
-    border-right: 2px solid var(--verde);
-  }
-
-  .header-datos li:last-child{
-    border-right: none;
+  .header .contenedorBotones{
+    justify-content: center;
   }
 }
 
 /* =========================
-   >= 1024px
+   >= 1024px (composición a dos columnas)
 ========================= */
 
 @media (min-width: 1024px){
@@ -207,23 +191,47 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    text-align: left;
     padding: 6rem 6vw 5rem;
-    min-height: calc(80vh - 84px);
+  }
+
+  .header-texto{
+    align-items: flex-start;
+  }
+
+  .header-grafico{
+    order: 0;
+  }
+
+  .header .paratexto{
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
   }
 
   .header .titulo{
     font-size: clamp(5.5rem, 9vw, 9rem);
+    line-height: 0.9;
+  }
+
+  .header .segundoTitulo{
+    margin-top: 1.5rem;
+    max-width: 34ch;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  .header .contenedorBotones{
+    justify-content: flex-start;
+    margin-top: 2.25rem;
   }
 
   .header .isotipo{
     width: clamp(300px, 30vw, 460px);
   }
 
-  .header-datos li{
-    padding: 2rem 6vw;
-  }
-
-  .header-datos .dato{
-    font-size: 2.2rem;
+  .header-datos{
+    display: grid;
   }
 }

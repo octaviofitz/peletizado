@@ -14,7 +14,6 @@ const marcas = [
         titulo: 'Secuestrante de micotoxinas',
         descripcion: 'Aglutinante natural de alto rendimiento para bovinos y otras especies.',
         url: 'https://secuestrantemicotoxinas.com.ar/',
-        color: '#ff3c00',
     },
     {
         nombre: 'Bentonita',
@@ -23,7 +22,6 @@ const marcas = [
         titulo: 'Bentonita sódica natural',
         descripcion: 'Bentonita certificada de nuestro yacimiento para cada industria.',
         url: 'https://bentonita.com.ar/',
-        color: '#1d6b87',
     },
     {
         nombre: 'Rubicat',
@@ -32,7 +30,6 @@ const marcas = [
         titulo: 'Arena sanitaria',
         descripcion: 'Venta de arena sanitaria para gatos elaborada a base de bentonita.',
         url: 'https://rubicat.com.ar/',
-        color: '#00909c',
     },
 ];
 
@@ -52,7 +49,6 @@ function NuestrasMarcas() {
                             target='_blank'
                             rel='noreferrer noopener'
                             className='card'
-                            style={{ '--color-marca': marca.color }}
                         >
                             <div className='logoContainer'>
                                 <img src={marca.logo} alt={marca.nombre} className='logoMarca' loading='lazy' />

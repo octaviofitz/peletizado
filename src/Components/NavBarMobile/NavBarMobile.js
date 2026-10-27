@@ -10,7 +10,7 @@ function NavBarMobile() {
         <img src={Logo} alt='Logo Aglupel Eco' className='logo'/>
       </a>
 
-      <a href="#contacto" className="ctaMobile">Contacto</a>
+      <a href="#contacto" className="ctaMobile">CONTACTO</a>
 
     </div>
   );

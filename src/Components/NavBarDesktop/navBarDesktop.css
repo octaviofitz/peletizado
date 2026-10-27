@@ -19,21 +19,20 @@
     justify-content: space-between;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 6vw;
-    height: 84px;
+    padding: 18px 6vw;
   }
 
   /* el logo trae mucho aire transparente: se recorta con el contenedor */
   .navDesktop__brand {
     display: block;
-    height: 84px;
+    height: 70px;
     overflow: hidden;
   }
 
   .navDesktop .logo {
     height: 150px;
     width: auto;
-    margin-top: -33px;
+    margin-top: -43px;
     display: block;
   }
 
@@ -75,10 +74,10 @@
     color: var(--lima);
     text-decoration: none;
     font-family: 'MontrealBold';
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     font-size: 1.05rem;
-    padding: 12px 26px;
+    line-height: 1;
+    padding: 14px 26px;
     border-radius: var(--radio-sm);
     transition: background 0.2s ease, color 0.2s ease;
   }

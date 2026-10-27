@@ -20,8 +20,7 @@ function Header() {
           </p>
 
           <div className='contenedorBotones'>
-            <a href="#contacto" className='boton boton-primario'>Contactar</a>
-            <a href="#ventajas" className='boton boton-secundario'>Ver ventajas</a>
+            <a href="#contacto" className='boton boton-primario'>CONTACTAR</a>
           </div>
         </div>
 

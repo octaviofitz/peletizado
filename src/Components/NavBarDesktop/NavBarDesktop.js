@@ -28,7 +28,7 @@ function NavBarDesktop() {
           </a>
 
           <a href="#contacto" className="navDesktop__cta">
-            Contacto
+            CONTACTO
           </a>
         </nav>
 
