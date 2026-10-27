@@ -1,5 +1,4 @@
 import React from 'react';
-import Nav from 'react-bootstrap/Nav';
 
 import isologo from '../../IMG/isologo.webp'
 
@@ -9,21 +8,26 @@ function Footer() {
     return (
         <footer className='footer'>
 
-            <div className='logo'>
-                <img className='isologo' src={isologo} alt='aglupel'></img>
+            <div className='footer__inner'>
+                <a href='/#top' className='logo'>
+                    <img className='isologo' src={isologo} alt='Aglupel Eco'></img>
+                    <span className='marca'>AGLUPEL<br />ECO</span>
+                </a>
+
+                <nav className='containerTexto' aria-label='Navegación del pie'>
+                    <a className="link" href="/#nosotros">Nosotros</a>
+                    <a className="link" href="/#ventajas">Ventajas</a>
+                    <a className="link" href="/#identificacion">Identificación</a>
+                    <a className="link" href="/#contacto">Contacto</a>
+                </nav>
             </div>
 
-                <div className='containerTexto'>
-                <Nav.Link className="link" href="/#nosotros">Nosotros</Nav.Link>
-                <Nav.Link className="link" href="/#ventajas">Ventajas</Nav.Link>
-                <Nav.Link className="link" href="/#identificacion">Identificación</Nav.Link>
-                <Nav.Link className="link" href="/#contacto">Contacto</Nav.Link>
-            </div>
+            <p className='texto'>Un producto de Minerales Patagónicos S.A.</p>
 
            {/*  <div className='galide'>
             <p className='texto'>Desarrollado por   <a href='https://www.galide.com.ar' target='__blank' className='bold'>Galidé</a></p>
             </div> */}
-           
+
         </footer>
     );
 }

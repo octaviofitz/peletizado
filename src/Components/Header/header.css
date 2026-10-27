@@ -3,214 +3,218 @@
 ========================= */
 
 .header{
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(180deg, #5f7086 0%, #4f5f75 60%, #46566d 100%);
-    padding: 4vh 0 18vh; /* MÁS espacio abajo para que el corte no toque botones */
-  }
+  position: relative;
+  overflow: hidden;
+  background: var(--verde);
+  color: var(--gris);
+}
 
-  .header{
-    position: relative;
-    overflow: hidden;
-  
-    background: linear-gradient(
-      180deg,
-      #a7c3d3 0%,
-      #a7c3d3 35%,
-      #eeeeee 70%,
-      #ffffff 100%
-    );
-  
-    padding: 4vh 0 18vh;
-  }
-  
-  /* Contenedor central real */
+.header-contenido{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3.5rem 6vw 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* =========================
+   TEXTO
+========================= */
+
+.header .paratexto{
+  display: inline-block;
+  background: var(--celeste);
+  color: var(--verde);
+  font-family: 'MontrealBold';
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  margin-bottom: 1.5rem;
+}
+
+.header .titulo{
+  color: var(--lima);
+  font-family: 'MontrealBold';
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: -0.01em;
+  font-size: clamp(3.4rem, 17vw, 5rem);
+}
+
+.header .titulo-eco{
+  display: block;
+  font-family: 'MontrealBold';
+}
+
+.header .segundoTitulo{
+  margin-top: 1.5rem;
+  max-width: 34ch;
+  font-size: clamp(1.15rem, 4.8vw, 1.5rem);
+  line-height: 1.3;
+  color: var(--gris);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.header .contenedorBotones{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 2.25rem;
+}
+
+.header .boton{
+  display: inline-block;
+  padding: 15px 30px;
+  font-family: 'MontrealBold';
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 2px solid var(--lima);
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.header .boton:hover{
+  transform: translateY(-2px);
+}
+
+.header .boton-primario{
+  background: var(--lima);
+  color: var(--verde);
+}
+
+.header .boton-primario:hover{
+  background: var(--gris);
+  border-color: var(--gris);
+}
+
+.header .boton-secundario{
+  background: transparent;
+  color: var(--lima);
+}
+
+.header .boton-secundario:hover{
+  background: var(--lima);
+  color: var(--verde);
+}
+
+/* =========================
+   ISOTIPO
+========================= */
+
+.header-grafico{
+  display: flex;
+  justify-content: center;
+}
+
+.header .isotipo{
+  width: min(40vw, 150px);
+  color: var(--lima);
+}
+
+/* =========================
+   DATOS DESTACADOS
+========================= */
+
+.header-datos{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: var(--celeste);
+  color: var(--verde);
+}
+
+.header-datos li{
+  padding: 1.25rem 6vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 2px solid var(--verde);
+}
+
+.header-datos li:last-child{
+  border-bottom: none;
+}
+
+.header-datos .dato{
+  font-family: 'MontrealBold';
+  font-size: 1.6rem;
+}
+
+.header-datos .etiqueta{
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+}
+
+/* =========================
+   >= 768px
+========================= */
+
+@media (min-width: 768px){
+
   .header-contenido{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 6vw;
-    text-align: center;
-    position: relative;
-    z-index: 2; /* SIEMPRE arriba del corte */
-    display: flex;
+    padding: 5rem 8vw 4rem;
+  }
+
+  .header .isotipo{
+    width: 220px;
+  }
+
+  .header-datos{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .header-datos li{
     flex-direction: column;
+    gap: 0.25rem;
+    padding: 1.75rem 8vw;
+    border-bottom: none;
+    border-right: 2px solid var(--verde);
+  }
+
+  .header-datos li:last-child{
+    border-right: none;
+  }
+}
+
+/* =========================
+   >= 1024px
+========================= */
+
+@media (min-width: 1024px){
+
+  .header-contenido{
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    padding: 6rem 6vw 5rem;
+    min-height: calc(80vh - 84px);
   }
-  
-  /* =========================
-     CORTE DIAGONAL (NO TOCA BOTONES)
-  ========================= */
-  
-  .header::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 180px; /* altura controlada */
-    background: #ffffff;
-    z-index: 1; /* detrás del contenido */
-    clip-path: polygon(0 75%, 100% 35%, 100% 100%, 0 100%);
-  }
-  
-  /* =========================
-     BADGE SUPERIOR
-  ========================= */
-  
-  .header .paratexto{
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 18px;
-  
-    background: rgba(15, 35, 60, 0.35);
-    border-radius: 999px;
-    border: 2px solid #2d3a2c;
-  
-    color: #ffffff;
-    font-size: 0.9rem;
-    font-weight: 600;
-  
-    text-align: center;   /* CENTRADO REAL */
-  }
-  
-  /* =========================
-     TITULO
-  ========================= */
-  
+
   .header .titulo{
-    margin-top: 20px;
-    color: white;
-    font-weight: 800;
-    line-height: 1.08;  
-    font-size: clamp(2.3rem, 10vw, 3.3rem);
-    font-family: 'MontrealBold';
-  }
-  
-  /* =========================
-     SUBTITULO
-  ========================= */
-  
-  .header .segundoTitulo{
-    margin-top: 1.75rem;
-    font-size: 2.5rem;
+    font-size: clamp(5.5rem, 9vw, 9rem);
   }
 
-  .header .subtitulo{
-    margin-top: 18px;
-    color: rgba(255,255,255,0.92);
-    font-weight: 400;
-    line-height: 1.5;
-    max-width: 750px;
-  
-    font-size: clamp(1.05rem, 4.8vw, 1.3rem);
-  }
-  
-  /* =========================
-     BOTONES
-  ========================= */
-  
-  .header .contenedorBotones{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    margin-top: 28px;
-  }
-  
-  .header .boton{
-    width: min(85vw, 380px);
-    padding: 14px 22px;
-    border-radius: 10px;
-    font-size: 1.05rem;
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 12px 26px rgba(0,0,0,0.25);
-    transition: all 0.25s ease;
-  }
-  
-  .header .boton:hover{
-    transform: translateY(-2px);
-  }
-  
-  /* Botón verde */
-  .header .boton-primario{
-    background: #213828;
-    color: white;
-  }
-  
-  /* Botón gris azulado */
-  .header .boton-secundario{
-    background: #213828;
-    color: white;
+  .header .isotipo{
+    width: clamp(300px, 30vw, 460px);
   }
 
-  .header a{
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
-  }
-  
-  /* =========================
-     >= 768px
-  ========================= */
-  
-  @media (min-width: 768px){
-  
-    .header{
-      padding: 6vh 0 20vh;
-    }
-  
-    .header::after{
-      height: 220px;
-      clip-path: polygon(0 78%, 100% 40%, 100% 100%, 0 100%);
-    }
-  
-    .header .titulo{
-      font-size: clamp(3rem, 6vw, 4.2rem);
-    }
-  
-    .header .subtitulo{
-      font-size: 1.25rem;
-    }
-  
-    .header .contenedorBotones{
-      flex-direction: row;
-      justify-content: center;
-    }
-  
-    .header .boton{
-      width: 280px;
-    }
-  }
-  
-  /* =========================
-     >= 1024px
-  ========================= */
-  
-  @media (min-width: 1024px){
-  
-    .header{
-      padding: 10vh 0 26vh;
-    }
-  
-    .header::after{
-      height: 260px;
-      clip-path: polygon(0 82%, 100% 45%, 100% 100%, 0 100%);
-    }
-  
-    .header .titulo{
-      font-size: clamp(3.5rem, 4.8vw, 5rem);
-    }
-  
-    .header .subtitulo{
-      font-size: 1.3rem;
-    }
-  
-    .header .boton{
-      width: 300px;
-      font-size: 1.1rem;
-    }
+  .header-datos li{
+    padding: 2rem 6vw;
   }
 
-  
+  .header-datos .dato{
+    font-size: 2.2rem;
+  }
+}

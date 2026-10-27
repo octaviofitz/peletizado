@@ -1,226 +1,138 @@
 .ventajas{
-  background-color: #213828;
-  padding: 2rem 2rem 3rem;
+  background-color: var(--celeste);
+  color: var(--verde);
+  padding: 3.5rem 6vw;
+}
+
+.ventajas__contenido{
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .ventajas .paratexto{
-text-align: center;
-font-weight: 700;
-color: white;
-letter-spacing: 1px;
+  display: inline-block;
+  background: var(--verde);
+  color: var(--lima);
+  font-family: 'MontrealBold';
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  margin-bottom: 1.25rem;
 }
 
 .ventajas .titulo{
-  font-size: 2.35rem;
-  text-align: left;
-  margin-top: 0.5rem;
+  font-size: clamp(2rem, 8vw, 2.6rem);
+  line-height: 1;
+  text-transform: uppercase;
   font-family: 'MontrealBold';
-  color: white;
-  /* justify-content: baseline; */
+  max-width: 20ch;
 }
 
 .ventajas .texto{
-margin-top: 1rem;
-color: white;
+  line-height: 1.5;
 }
 
-.ventajas .listado{
-  padding-left: 1rem;
+.ventajas .intro{
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  max-width: 60ch;
 }
 
 /* ================= CARDS ================= */
 
 .ventajas .cards {
+  list-style: none;
+  padding: 0;
+  margin: 2.5rem 0 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  margin: 2rem;
+  grid-template-columns: 1fr;
+  gap: 18px;
 }
 
-.ventajas .cards .card {
-  background: white;
-  border-radius: 18px;
-  padding: 28px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+.ventajas .card {
+  background: var(--gris);
+  padding: 1.75rem;
+  border-top: 6px solid var(--verde);
+  transition: transform 0.25s ease, background 0.25s ease;
 }
 
-.ventajas .cards .card:hover {
+.ventajas .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+  background: var(--lima);
 }
 
-.ventajas .cards .card .porcentaje {
-  font-size: 46px;
-  font-weight: 600;
-  line-height: 1;
-  margin-bottom: 8px;
-}
-
-.ventajas .porcentaje-verde {
-  color: #636e50;
-}
-
-.ventajas .porcentaje-azul {
-  color: #ff5a34;
-}
-
-.ventajas .cards .card .subtitulo {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 12px;
-  color: black;
-}
-
-.ventajas .cards .card .texto {
-  font-size: 16px;
-  line-height: 1.55;
-  color: black;
-  text-align: left;
-}
-
-.ventajas .prueba{
-  font-size: 1.4rem;
-}
-
-/* ================= TARJETA GRANDE ================= */
-
-.ventajas .tarjetaGrande{
-  background-color: white;
-  margin: 2rem;
-  border-radius: 18px;
-  padding: 2rem 1rem 3rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-.ventajas .titulo-mecanismo{
-  font-size: 2rem;
-  color: #636e50;
-  margin-bottom: 2rem;
-}
-
-.ventajas .containerTarjetaGrande{
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.ventajas .tarjeta{
-  display: flex;
-  flex-direction: column;
+.ventajas .numero{
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: var(--verde);
+  color: var(--lima);
+  font-family: 'MontrealBold';
+  font-size: 1.35rem;
+  margin-bottom: 1.25rem;
 }
 
-.ventajas .tarjeta .subtitulo{
-  text-align: center;
-  color: #636e50;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+.ventajas .subtitulo {
+  font-family: 'MontrealBold';
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
 }
 
-.ventajas .tarjeta .texto{
-  text-align: center;
-  padding: 0 1.5rem;
-}
-
-/* ===== CÍRCULOS (agregados también en mobile como pediste) ===== */
-
-.ventajas .punto{
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: #2c3340;
-  opacity: 0.35;
-  margin-bottom: 1rem;
+.ventajas .card .texto {
+  font-size: 1rem;
 }
 
 /* ================= >= 768px ================= */
 
 @media (min-width: 768px) {
-
   .ventajas{
-    padding: 6vh 8vw;
+    padding: 5rem 8vw;
   }
 
-.ventajas .cards {
-  grid-template-columns: repeat(2, 1fr);
+  .ventajas .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
 }
 
-.ventajas .containerTarjetaGrande {
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.ventajas .tarjeta {
-  flex: 1;
-}
-}
-
-/* ================= >= 1024px (como tu captura) ================= */
+/* ================= >= 1024px ================= */
 
 @media (min-width: 1024px){
-
   .ventajas{
-      padding: 3.5rem 12vw;
+    padding: 6rem 6vw;
   }
 
   .ventajas .titulo{
-      font-size: 3rem;
+    font-size: 3.2rem;
   }
 
   .ventajas .cards{
-      max-width: 1100px;
-      margin: 3rem auto;
-      gap: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3.5rem;
   }
 
-  .ventajas .cards .card{
-      padding: 3rem;
-      border-radius: 22px;
-  }
-
-  .ventajas .tarjetaGrande{
-      max-width: 1100px;
-      margin: 3rem auto;
-      padding: 3rem 2rem 4rem;
-      border-radius: 22px;
-  }
-
-  .ventajas .punto{
-      width: 70px;
-      height: 70px;
-      margin-bottom: 1.25rem;
+  .ventajas .card{
+    padding: 2rem;
   }
 }
 
 /* ================= >= 1440px ================= */
 
 @media (min-width: 1440px){
-
-  .ventajas{
-      padding: 9vh 180px;
-  }
-
   .ventajas .titulo{
-      font-size: 3.8rem;
-      margin-bottom: 2rem;
+    font-size: 3.8rem;
   }
 
-  .ventajas .texto{
+  .ventajas .intro{
     font-size: 1.3rem;
-
   }
 
-  .ventajas .cards{
-      max-width: 1300px;
-      gap: 4rem;
-  }
-
-  .ventajas .tarjetaGrande{
-      max-width: 1300px;
-  }
-
-  .ventajas .cards .card{
-      padding: 3.5rem;
+  .ventajas .card .texto{
+    font-size: 1.1rem;
   }
 }

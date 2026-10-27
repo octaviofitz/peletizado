@@ -9,7 +9,12 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import './contacto.css';
 
-const theme = createTheme({});
+const theme = createTheme({
+  palette: {
+    primary: { main: '#213727' },
+  },
+  shape: { borderRadius: 0 },
+});
 
 function Contacto() {
   const [name, setName] = useState('');
@@ -39,7 +44,12 @@ function Contacto() {
     setErrorMsg(msgInvalid);
 
     if (nameInvalid || empresaInvalid || mailInvalid || msgInvalid) {
-      Swal.fire('Error', 'Complete los campos correctamente', 'error');
+      Swal.fire({
+        title: 'Error',
+        text: 'Complete los campos correctamente',
+        icon: 'error',
+        confirmButtonColor: '#213727'
+      });
       return;
     }
 
@@ -56,7 +66,7 @@ function Contacto() {
         Swal.fire({
           title: '¡Mensaje enviado!',
           icon: 'success',
-          confirmButtonColor: '#2d3a2c'
+          confirmButtonColor: '#213727'
         });
       
         e.target.reset();
@@ -76,6 +86,7 @@ function Contacto() {
 
           {/* HEADER */}
           <div className="formHeader">
+            <span className="formHeader__tag">Contacto</span>
             <h2>Contáctenos</h2>
             <p>Solicite cotización o fichas técnicas detalladas</p>
           </div>

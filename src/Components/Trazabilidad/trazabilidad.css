@@ -1,217 +1,133 @@
 .trazabilidad{
-    background-color: #213828;
-    padding: 2rem 2rem 3rem;
-  }
-  
-  .trazabilidad .titulo{
-    font-size: 2.35rem;
-    margin-top: 0.5rem;
-    font-family: 'MontrealBold';
-    color: white;
-  }
-  
-  .trazabilidad .texto{
-  margin-top: 1rem;
-  color: white;
-  }
-  
-  /* ================= CARDS ================= */
-  
-  .trazabilidad .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-    margin: 2rem;
-  }
-  
-  .trazabilidad .cards .card {
-    background: white;
-    border-radius: 18px;
-    padding: 28px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-  }
-  
-  .trazabilidad .cards .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
-  }
-  
-  .trazabilidad .cards .card .porcentaje {
-    font-size: 46px;
-    font-weight: 600;
-    line-height: 1;
-    margin-bottom: 8px;
-  }
-  
-  .trazabilidad .porcentaje-verde {
-    color: #636e50;
-  }
-  
-  .trazabilidad .porcentaje-azul {
-    color: #ff5a34;
-  }
-  
-  .trazabilidad .cards .card .subtitulo {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 12px;
-    color: black;
-  }
-  
-  .trazabilidad .cards .card .texto {
-    font-size: 16px;
-    line-height: 1.55;
-    color: black;
-    text-align: left;
-  }
-  
-  .trazabilidad .prueba{
-    font-size: 1.4rem;
-  }
-  
-  /* ================= TARJETA GRANDE ================= */
-  
-  .trazabilidad .tarjetaGrande{
-    background-color: white;
-    margin: 2rem;
-    border-radius: 18px;
-    padding: 2rem 1rem 3rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  }
-  
-  .trazabilidad .titulo-mecanismo{
-    font-size: 2rem;
-    color: #636e50;
-    margin-bottom: 2rem;
-  }
-  
-  .trazabilidad .containerTarjetaGrande{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .trazabilidad .tarjeta{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .trazabilidad .tarjeta .subtitulo{
-    text-align: center;
-    color: #636e50;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .trazabilidad .tarjeta .texto{
-    text-align: center;
-    padding: 0 1.5rem;
-  }
-  
-  /* ===== CÍRCULOS (agregados también en mobile como pediste) ===== */
-  
-  .trazabilidad .punto{
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background: #2c3340;
-    opacity: 0.35;
-    margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--verde);
+  color: var(--gris);
+  padding: 3.5rem 6vw;
+}
+
+/* isotipo decorativo de fondo */
+.trazabilidad__isotipo{
+  position: absolute;
+  top: -40px;
+  right: -90px;
+  width: 300px;
+  color: var(--verde-claro);
+  pointer-events: none;
+}
+
+.trazabilidad__contenido{
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.trazabilidad .paratexto{
+  display: inline-block;
+  background: var(--lima);
+  color: var(--verde);
+  font-family: 'MontrealBold';
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  margin-bottom: 1.25rem;
+}
+
+.trazabilidad .titulo{
+  font-size: clamp(2rem, 8vw, 2.6rem);
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: 'MontrealBold';
+  color: var(--lima);
+}
+
+.trazabilidad .texto{
+  line-height: 1.5;
+}
+
+.trazabilidad .intro{
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  max-width: 62ch;
+}
+
+.trazabilidad .listado{
+  list-style: none;
+  padding: 0;
+  margin: 2.5rem 0 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.trazabilidad .item{
+  border-top: 3px solid var(--celeste);
+  padding-top: 1.25rem;
+}
+
+.trazabilidad .subtitulo{
+  font-family: 'MontrealBold';
+  text-transform: uppercase;
+  color: var(--celeste);
+  font-size: 1.25rem;
+  line-height: 1.1;
+  margin-bottom: 0.6rem;
+}
+
+/* ================= >= 768px ================= */
+
+@media (min-width: 768px) {
+  .trazabilidad{
+    padding: 5rem 8vw;
   }
 
   .trazabilidad .listado{
-    padding-left: 1rem;
-  }
-  
-  /* ================= >= 768px ================= */
-  
-  @media (min-width: 768px) {
-
-    .trazabilidad{
-        padding: 6vh 8vw;      
-    }
-  
-  .trazabilidad .cards {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 3rem;
   }
-  
-  .trazabilidad .containerTarjetaGrande {
-    flex-direction: row;
-    justify-content: space-between;
+
+  .trazabilidad__isotipo{
+    width: 440px;
+    right: -120px;
   }
-  
-  .trazabilidad .tarjeta {
-    flex: 1;
+}
+
+/* ================= >= 1024px ================= */
+
+@media (min-width: 1024px){
+  .trazabilidad{
+    padding: 6rem 6vw;
   }
+
+  .trazabilidad .titulo{
+    font-size: 3.2rem;
   }
-  
-  /* ================= >= 1024px (como tu captura) ================= */
-  
-  @media (min-width: 1024px){
-  
-    .trazabilidad{
-        padding: 3.5rem 10vw;
-    }
-  
-    .trazabilidad .titulo{
-        font-size: 3rem;
-        margin-bottom: 3rem;
-    }
-  
-    .trazabilidad .cards{
-        max-width: 1100px;
-        margin: 3rem auto;
-        gap: 3rem;
-    }
-  
-    .trazabilidad .cards .card{
-        padding: 3rem;
-        border-radius: 22px;
-    }
-  
-    .trazabilidad .tarjetaGrande{
-        max-width: 1100px;
-        margin: 3rem auto;
-        padding: 3rem 2rem 4rem;
-        border-radius: 22px;
-    }
-  
-    .trazabilidad .punto{
-        width: 70px;
-        height: 70px;
-        margin-bottom: 1.25rem;
-    }
+
+  .trazabilidad .listado{
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3.5rem;
   }
-  
-  /* ================= >= 1440px ================= */
-  
-  @media (min-width: 1440px){
-  
-    .trazabilidad{
-      padding: 9vh 180px;
-    }
-  
-    .trazabilidad .titulo{
-        font-size: 3.8rem;
-    }
-  
-    .trazabilidad .texto{
-      font-size: 1.3rem;
-  
-    }
-  
-    .trazabilidad .cards{
-        max-width: 1300px;
-        gap: 4rem;
-    }
-  
-    .trazabilidad .tarjetaGrande{
-        max-width: 1300px;
-    }
-  
-    .trazabilidad .cards .card{
-        padding: 3.5rem;
-    }
+
+  .trazabilidad__isotipo{
+    width: 560px;
+    top: -60px;
+    right: -100px;
   }
+}
+
+/* ================= >= 1440px ================= */
+
+@media (min-width: 1440px){
+  .trazabilidad .titulo{
+    font-size: 3.8rem;
+  }
+
+  .trazabilidad .intro{
+    font-size: 1.3rem;
+  }
+
+  .trazabilidad .item .texto{
+    font-size: 1.1rem;
+  }
+}
