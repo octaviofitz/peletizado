@@ -4,6 +4,8 @@
 :root {
   --radio: 14px;
   --radio-sm: 8px;
+  --sombra: 0 8px 24px rgba(33, 55, 39, 0.14);
+  --sombra-sm: 0 4px 12px rgba(33, 55, 39, 0.16);
   --verde: #213727;
   --verde-claro: #2e4a36;
   --lima: #E8FE41;

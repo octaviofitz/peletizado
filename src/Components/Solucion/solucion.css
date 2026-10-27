@@ -37,6 +37,7 @@
   color: var(--gris);
   padding: 1rem 1.25rem;
   border-radius: var(--radio-sm);
+  box-shadow: var(--sombra);
 }
 
 .solucion__media{
@@ -55,6 +56,7 @@
   right: -14px;
   bottom: -14px;
   border-radius: var(--radio);
+  box-shadow: var(--sombra);
   background: var(--celeste);
 }
 
@@ -66,6 +68,7 @@
   object-fit: cover;
   object-position: center;
   border-radius: var(--radio);
+  box-shadow: var(--sombra);
   display: block;
 }
 
