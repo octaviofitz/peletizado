@@ -1,0 +1,171 @@
+.nuestrasMarcas{
+  background: var(--gris);
+  color: var(--verde);
+  padding: 3.5rem 6vw;
+}
+
+.nuestrasMarcas__contenido{
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.nuestrasMarcas .paratexto{
+  display: inline-block;
+  background: var(--verde);
+  color: var(--lima);
+  font-family: 'MontrealBold';
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-bottom: 1.25rem;
+}
+
+.nuestrasMarcas .titulo{
+  font-size: clamp(2rem, 8vw, 2.6rem);
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--verde);
+}
+
+.nuestrasMarcas .descripcion{
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 46ch;
+}
+
+/* ================= CARDS ================= */
+
+.nuestrasMarcas .cards{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 420px;
+  margin-top: 2.5rem;
+}
+
+.nuestrasMarcas .card{
+  display: flex;
+  flex-direction: column;
+  background: var(--blanco);
+  border-radius: var(--radio);
+  border-bottom: 6px solid var(--color-marca);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(33, 55, 39, 0.12);
+  text-decoration: none;
+  color: var(--verde);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.nuestrasMarcas .card:hover,
+.nuestrasMarcas .card:focus-visible{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(33, 55, 39, 0.22);
+}
+
+.nuestrasMarcas .logoContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  padding: 1.5rem 2rem 0.5rem;
+}
+
+.nuestrasMarcas .logoMarca{
+  max-width: 65%;
+  max-height: 70px;
+  object-fit: contain;
+}
+
+.nuestrasMarcas .contenidoMarca{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  padding: 1.5rem;
+}
+
+.nuestrasMarcas .rubro{
+  font-family: 'MontrealBold';
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-marca);
+  border: 2px solid var(--color-marca);
+  border-radius: 999px;
+  padding: 0.15rem 0.75rem;
+  margin-bottom: 0.9rem;
+}
+
+.nuestrasMarcas .tituloMarca{
+  font-size: 1.3rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.nuestrasMarcas .dataMarca{
+  font-size: 1rem;
+  line-height: 1.5;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.nuestrasMarcas .botonMarca{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  align-self: stretch;
+  font-family: 'MontrealBold';
+  color: var(--blanco);
+  background: var(--color-marca);
+  border-radius: var(--radio-sm);
+  padding: 0.8rem 1rem;
+}
+
+.nuestrasMarcas .flecha{
+  transition: transform 0.25s ease;
+}
+
+.nuestrasMarcas .card:hover .flecha{
+  transform: translateX(5px);
+}
+
+@media (min-width: 768px){
+  .nuestrasMarcas{
+    padding: 5rem 8vw;
+  }
+
+  .nuestrasMarcas .cards{
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1024px){
+  .nuestrasMarcas{
+    padding: 6rem 6vw;
+  }
+
+  .nuestrasMarcas .titulo{
+    font-size: 3.2rem;
+  }
+
+  .nuestrasMarcas .cards{
+    gap: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .nuestrasMarcas .card,
+  .nuestrasMarcas .flecha{
+    transition: none;
+  }
+}

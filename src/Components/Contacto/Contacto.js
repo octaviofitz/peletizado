@@ -13,7 +13,8 @@ const theme = createTheme({
   palette: {
     primary: { main: '#213727' },
   },
-  shape: { borderRadius: 0 },
+  shape: { borderRadius: 8 },
+  typography: { fontFamily: "'MontrealMedium', 'Helvetica Neue', Arial, sans-serif" },
 });
 
 function Contacto() {

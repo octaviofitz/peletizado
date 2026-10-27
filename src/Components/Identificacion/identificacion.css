@@ -18,6 +18,7 @@
   letter-spacing: 0.08em;
   font-size: 0.85rem;
   padding: 6px 12px;
+  border-radius: 6px;
   margin-bottom: 1.25rem;
 }
 
@@ -69,6 +70,7 @@ TABLA
   background: var(--verde);
   color: var(--gris);
   padding: 1.75rem 1.25rem 1.5rem;
+  border-radius: var(--radio);
 }
 
 .identificacion .tituloTabla {
@@ -88,6 +90,14 @@ TABLA
 .identificacion .tabla thead {
   background: var(--lima);
   color: var(--verde);
+}
+
+.identificacion .tabla th:first-child {
+  border-radius: var(--radio-sm) 0 0 var(--radio-sm);
+}
+
+.identificacion .tabla th:last-child {
+  border-radius: 0 var(--radio-sm) var(--radio-sm) 0;
 }
 
 .identificacion .tabla th {

@@ -10,7 +10,9 @@
   max-width: 1000px;
   background: var(--blanco);
   border: 3px solid var(--verde);
-  box-shadow: 12px 12px 0 var(--verde);
+  border-radius: var(--radio);
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(33, 55, 39, 0.25);
 }
 
 /* HEADER */
@@ -29,6 +31,7 @@
   letter-spacing: 0.08em;
   font-size: 0.8rem;
   padding: 5px 10px;
+  border-radius: 6px;
   margin-bottom: 1rem;
 }
 
@@ -61,7 +64,7 @@
   font-size: 1rem !important;
   font-family: 'MontrealBold' !important;
   letter-spacing: 0.06em !important;
-  border-radius: 0 !important;
+  border-radius: var(--radio-sm) !important;
   box-shadow: none !important;
   transition: background 0.2s ease, color 0.2s ease !important;
 }

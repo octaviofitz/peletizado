@@ -2,6 +2,8 @@
    PALETA AGLUPEL ECO (manual de marca)
 ========================= */
 :root {
+  --radio: 14px;
+  --radio-sm: 8px;
   --verde: #213727;
   --verde-claro: #2e4a36;
   --lima: #E8FE41;
@@ -14,6 +16,7 @@ body {
   margin: 0;
   background: var(--gris);
   color: var(--verde);
+  font-family: 'MontrealMedium', 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

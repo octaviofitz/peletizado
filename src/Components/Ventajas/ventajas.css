@@ -18,6 +18,7 @@
   letter-spacing: 0.08em;
   font-size: 0.85rem;
   padding: 6px 12px;
+  border-radius: 6px;
   margin-bottom: 1.25rem;
 }
 
@@ -54,6 +55,7 @@
   background: var(--gris);
   padding: 1.75rem;
   border-top: 6px solid var(--verde);
+  border-radius: var(--radio);
   transition: transform 0.25s ease, background 0.25s ease;
 }
 
@@ -72,6 +74,7 @@
   color: var(--lima);
   font-family: 'MontrealBold';
   font-size: 1.35rem;
+  border-radius: 10px;
   margin-bottom: 1.25rem;
 }
 

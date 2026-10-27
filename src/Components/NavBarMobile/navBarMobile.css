@@ -35,6 +35,7 @@
     letter-spacing: 0.04em;
     font-size: 0.9rem;
     padding: 9px 16px;
+    border-radius: var(--radio-sm);
   }
 
   @media (min-width: 1024px){

@@ -31,6 +31,7 @@
   letter-spacing: 0.08em;
   font-size: 0.85rem;
   padding: 6px 12px;
+  border-radius: 6px;
   margin-bottom: 1.5rem;
 }
 
@@ -78,6 +79,7 @@
   font-size: 1rem;
   text-decoration: none;
   border: 2px solid var(--lima);
+  border-radius: var(--radio-sm);
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
@@ -96,6 +98,7 @@
 }
 
 .header .boton-secundario{
+  display: none;
   background: transparent;
   color: var(--lima);
 }
@@ -123,11 +126,12 @@
    DATOS DESTACADOS
 ========================= */
 
+/* la franja de datos solo se muestra desde tablet */
 .header-datos{
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
+  display: none;
   grid-template-columns: 1fr;
   background: var(--celeste);
   color: var(--verde);
@@ -171,7 +175,12 @@
     width: 220px;
   }
 
+  .header .boton-secundario{
+    display: inline-block;
+  }
+
   .header-datos{
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 

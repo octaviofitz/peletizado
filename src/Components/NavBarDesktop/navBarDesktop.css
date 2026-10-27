@@ -79,6 +79,7 @@
     letter-spacing: 0.04em;
     font-size: 1.05rem;
     padding: 12px 26px;
+    border-radius: var(--radio-sm);
     transition: background 0.2s ease, color 0.2s ease;
   }
 
