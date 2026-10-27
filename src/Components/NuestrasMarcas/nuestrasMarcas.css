@@ -84,6 +84,15 @@
   object-fit: contain;
 }
 
+.nuestrasMarcas .logo-bentonita{
+  max-height: 96px;
+}
+
+.nuestrasMarcas .logo-rubicat{
+  max-width: 52%;
+  max-height: 56px;
+}
+
 .nuestrasMarcas .contenidoMarca{
   display: flex;
   flex-direction: column;

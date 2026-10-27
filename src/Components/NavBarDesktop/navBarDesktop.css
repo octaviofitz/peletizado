@@ -25,14 +25,14 @@
   /* el logo trae mucho aire transparente: se recorta con el contenedor */
   .navDesktop__brand {
     display: block;
-    height: 70px;
+    height: 50px;
     overflow: hidden;
   }
 
   .navDesktop .logo {
-    height: 150px;
+    height: 110px;
     width: auto;
-    margin-top: -43px;
+    margin-top: -32px;
     display: block;
   }
 

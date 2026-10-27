@@ -51,7 +51,7 @@ function NuestrasMarcas() {
                             className='card'
                         >
                             <div className='logoContainer'>
-                                <img src={marca.logo} alt={marca.nombre} className='logoMarca' loading='lazy' />
+                                <img src={marca.logo} alt={marca.nombre} className={`logoMarca logo-${marca.nombre.toLowerCase()}`} loading='lazy' />
                             </div>
                             <div className='contenidoMarca'>
                                 <span className='rubro'>{marca.rubro}</span>

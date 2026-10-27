@@ -228,7 +228,7 @@
   }
 
   .header .isotipo{
-    width: clamp(300px, 30vw, 460px);
+    width: clamp(200px, 20vw, 300px);
   }
 
   .header-datos{
