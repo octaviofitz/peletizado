@@ -2,6 +2,14 @@ import React from "react";
 import "./identificacion.css";
 
 function Identificacion() {
+  const producto = [
+    { nombre: "Producto", valor: "AGLUPEL ECO" },
+    { nombre: "Forma Física", valor: "Polvo grueso" },
+    { nombre: "Color", valor: "Beige / Marrón claro" },
+    { nombre: "Dosis Recomendada", valor: "30 kg / Tonelada" },
+    { nombre: "Presentación", valor: "Big Bags de 1.250 kg" },
+  ];
+
   const sustancias = [
     { nombre: "Humedad", limite: "15,0% máximo" },
     { nombre: "Densidad Aparente", limite: "1,0 – 1,5 kg/L" },
@@ -14,55 +22,43 @@ function Identificacion() {
       <div className="identificacion__contenido">
 
         <div className="identificacion__info">
+          <p className="paratexto">Ficha técnica</p>
           <h2 className="titulo">
             Identificación y Especificaciones Físico-Químicas
           </h2>
 
-          {/* <h3 id="subtitulo">Identificación del Producto:</h3> */}
-
-          <ul className="listado">
-            <li>
-              <strong>PRODUCTO: </strong>AGLUPEL ECO
-            </li>
-            <li>
-              <strong>Forma Física: </strong>Polvo grueso
-            </li>
-            <li>
-              <strong>Color: </strong>Beige / Marrón claro
-            </li>
-            <li>
-              <strong>Dosis Recomendada: </strong>30 kg / Tonelada
-            </li>
-            <li>
-              <strong>Presentación: </strong>Disponible en Big Bags de 1.250 kg
-            </li>
-          </ul>
+          <dl className="listado">
+            {producto.map((item) => (
+              <div className="fila" key={item.nombre}>
+                <dt>{item.nombre}</dt>
+                <dd>{item.valor}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
 
-        <div className="ContenedorTarjetas">
-          <div className="cardTabla">
-            <h4 className="titulo">
-              Especificación Físico-Química
-            </h4>
+        <div className="cardTabla">
+          <h4 className="tituloTabla">
+            Especificación Físico-Química
+          </h4>
 
-            <table className="tabla">
-              <thead>
-                <tr>
-                  <th>Parámetro</th>
-                  <th>Rango Especificado</th>
+          <table className="tabla">
+            <thead>
+              <tr>
+                <th>Parámetro</th>
+                <th>Rango Especificado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {sustancias.map((item) => (
+                <tr key={item.nombre}>
+                  <td>{item.nombre}</td>
+                  <td className="valor">{item.limite}</td>
                 </tr>
-              </thead>
-
-              <tbody>
-                {sustancias.map((item, i) => (
-                  <tr key={i}>
-                    <td>{item.nombre}</td>
-                    <td className="valor">{item.limite}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+              ))}
+            </tbody>
+          </table>
         </div>
 
       </div>

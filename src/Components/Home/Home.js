@@ -8,6 +8,7 @@ import Identificacion from '../Identificacion/Identificacion';
 import CasoExito from '../CasoExito/CasoExito';
 import Contacto from '../Contacto/Contacto';
 import Trazabilidad from '../Trazabilidad/Trazabilidad';
+import NuestrasMarcas from '../NuestrasMarcas/NuestrasMarcas';
 
 
 
@@ -23,6 +24,7 @@ function Home() {
             <Identificacion />
             <Trazabilidad />
             {/* <CasoExito /> */}
+            <NuestrasMarcas />
             <Contacto />
         </div>
     );

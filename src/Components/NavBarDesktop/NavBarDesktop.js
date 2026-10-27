@@ -7,9 +7,9 @@ function NavBarDesktop() {
     <header className="navDesktop">
       <div className="navDesktop__inner">
 
-        <div className="navDesktop__brand">
-          <img src={Logo} alt="Aglupel" className="logo" />
-        </div>
+        <a href="#top" className="navDesktop__brand">
+          <img src={Logo} alt="Aglupel Eco" className="logo" />
+        </a>
 
         <nav
           className="navDesktop__links"
@@ -27,8 +27,8 @@ function NavBarDesktop() {
             Identificación
           </a>
 
-          <a href="#contacto" className="navDesktop__link">
-            Contacto
+          <a href="#contacto" className="navDesktop__cta">
+            CONTACTO
           </a>
         </nav>
 

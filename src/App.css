@@ -8,16 +8,19 @@
 
 @font-face {
     font-family: 'MontrealBold';
-    src: url('./Fonts/Montreal/NeueMontreal-Bold.otf') format('truetype');
+    src: url('./Fonts/Montreal/NeueMontreal-Bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'MontrealMedium';
-    src: url('./Fonts/Montreal/NeueMontreal-Medium.otf') format('truetype');
+    src: url('./Fonts/Montreal/NeueMontreal-Medium.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
   
   
+h1, h2, h3, h4, h5, h6, strong, b {
+    font-family: 'MontrealBold';
+}

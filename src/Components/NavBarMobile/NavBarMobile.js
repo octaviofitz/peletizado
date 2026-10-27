@@ -6,12 +6,11 @@ function NavBarMobile() {
   return (
     <div className="navMobile">
 
-      <div className="logoBox">
-        <div className="logoIcon">
-          <img src={Logo} alt='Logo Aglupel' className='logo'/>
-        </div>
-        {/* <span className="logoText">VULGEL CR 40</span> */}
-      </div>
+      <a href="#top" className="logoBox">
+        <img src={Logo} alt='Logo Aglupel Eco' className='logo'/>
+      </a>
+
+      <a href="#contacto" className="ctaMobile">CONTACTO</a>
 
     </div>
   );

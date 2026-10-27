@@ -1,36 +1,40 @@
 .navMobile{
-    width:100%;
-    background: white;
-    padding: 0px 18px;
-    border-radius:12px;
-    display:flex;
-    align-items:center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    background: var(--gris);
+    border-bottom: 3px solid var(--verde);
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  
+
+  /* el logo trae mucho aire transparente: se recorta con el contenedor */
   .navMobile .logoBox{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    cursor: pointer;
+    display: block;
+    height: 50px;
+    overflow: hidden;
   }
-
-  
-  .navMobile .logoText{
-    font-size:18px;
-    font-weight:700;
-    color:#636e50;
-    letter-spacing:0.5px;
-  }
-
 
   .navMobile .logo{
-    width: 33vw;
+    height: 112px;
+    width: auto;
+    margin-top: -32px;
+    display: block;
   }
 
-  @media (min-width: 768px){
-    .navMobile .logo{
-      width: 22vw;
-    }
+  .navMobile .ctaMobile{
+    background: var(--verde);
+    color: var(--lima);
+    text-decoration: none;
+    font-family: 'MontrealBold';
+    letter-spacing: 0.02em;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 12px 18px;
+    border-radius: var(--radio-sm);
   }
 
   @media (min-width: 1024px){
